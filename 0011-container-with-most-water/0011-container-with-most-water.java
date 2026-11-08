@@ -6,7 +6,7 @@ class Solution {
         while(i<j){
             int contain = Math.min(height[i],height[j])*(j-i);
             maxi = Math.max(contain,maxi);
-            if(height[i]>height[j]){
+            if(height[i]>height[j] && i<j){
                 j--;
             }
             else{
